@@ -15,8 +15,12 @@ my $ua = LWP::UserAgent->new(
     timeouts => 10
 );
 
-my $rest_prefix = 'http://112.121.84.194:8088/observer-mode/rest/consumer';
-my $rest_region = 'TW';
+#for NA, use the following
+my $rest_prefix = 'http://216.133.234.17:8088/observer-mode/rest/consumer';
+my $rest_region = 'NA1';
+ #for TW
+ #my $rest_prefix = 'http://112.121.84.194:8088/observer-mode/rest/consumer';
+ #my $rest_region = 'TW';
 
 sub rest_url {
     my ($func, $game_id, $arg) = @_;
